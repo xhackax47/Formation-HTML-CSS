@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+div{
+    background-color: brown;
+    max-width: 300px;
+    float: left;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin: 5px;
+}
+
+p{
+    color: whitesmoke;
+    border: dotted 3px darkslategrey;
+}
+
+h1{
+    font-weight: bold;
+    color: red; 
+    text-align: center;
+}
+
+img{
+    max-width: 180px;
+}
