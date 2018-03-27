@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="tableau.js">
+        function message () {
+            var toto = "Bonjour";
+            var titi = "les développeurs";
+            return toto + " " + titi;
+        }
+        console.debug(message());
+        console.log("un log");
+        console.error("une erreur");
+    </script>
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire</h1>
+    </header>
+
+    <div id="menu">
+        <section>
+            <b>Menu</b>
+
+            <p>
+                <ul>
+                    <li>
+                        <a href="index.html" alt="Accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="details.html" alt="Détails">Détails</a>
+                    </li>
+                    <li>
+                        <a href="formulaire.html" alt="Formulaire">Formulaire</a>
+                    </li>
+                    <li>
+                        <a href="premierjs.html" alt="Formulaire">Script JS</a>
+                    </li>
+                    <li>
+                        <a href="newfile.html" alt="Liste Course">Liste Courses</a>
+                    </li>
+                </ul>
+
+            </p>
+            <p>Site de test pour la formation POEI CapGemini de Développeur Java/J2EE concernant la partie site web et plus
+                précisément HTML (HyperText Markup Language) et feuilles de style CSS (Cascade Style Sheet).
+            </p>
+            <br>
+        </section>
+
+    </div>
+
+    <div class="form" id="form">
+        <form method="POST" action="resultat.php">
+
+            <label id="lbl-nom">Nom</label>
+            <br>
+            <input type="text" placeholder="Entrez votre nom" name="lastName">
+            <br>
+            <label>Prénom</label>
+            <br>
+            <input type="text" placeholder="Entrez votre prénom" name="firstName">
+            <br>
+            <label class="lblpass fondjaune">Email</label>
+            <br>
+            <input type="email" placeholder="Entrez votre email" name="eMail">
+            <br>
+            <label class="lblpass fondjaune">Mot de passe</label>
+            <br>
+            <input type="password" placeholder="******" name="password">
+            <br>
+            <input type="submit" value="S'inscrire" name="inscription">
+        </form>
+    </div>
+
+    <div class="form2" id="form">
+            <form method="POST" action="resultat.php">
+    
+                <label id="lbl-nom2">Nom 2</label>
+                <br>
+                <input type="text" placeholder="Entrez votre nom" name="lastName2">
+                <br>
+                <label>Prénom 2</label>
+                <br>
+                <input type="text" placeholder="Entrez votre prénom" name="firstName2">
+                <br>
+                <label class="lblpass2 fondjaune2">Email 2</label>
+                <br>
+                <input type="email" placeholder="Entrez votre email" name="eMail2">
+                <br>
+                <label class="lblpass2 fondjaune2">Mot de passe 2</label>
+                <br>
+                <input type="password" placeholder="******" name="password2">
+                <br>
+                <input type="submit" value="S'inscrire" name="inscription2">
+            </form>
+        </div>
+</body>
+
+</html>

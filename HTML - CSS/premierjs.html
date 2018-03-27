@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
-    <title>Détails</title>
+    <title>Premier JS</title>
 </head>
 
 <body>
     <header>
-        <h1>Détails</h1>
+        <h1>Premier script JavaScript</h1>
     </header>
 
     <div id="menu">
@@ -43,16 +43,32 @@
         </section>
     </div>
 
-    <div id="details">
-        <p>Site de test pour la formation POEI CapGemini de Développeur Java/J2EE concernant la partie site web et plus précisément
-            HTML (HyperText Markup Language) et feuilles de style CSS (Cascade Style Sheet).
-        </p>
-        <br>
-        <p>
-            <a href="index.html" alt="Retour">Retour Accueil</a>
-        </p>
-
+    <div id="resultat">Ici se trouvera le résultat</div>
     </div>
+    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/3/3e/Grommash_wallpaper.jpg/665px-Grommash_wallpaper.jpg?version=6e9ef81f07e66407a014145bdf5af013"
+        id="Grommash" style="max-width:140px;">
+    <button id="enavant">En avant !!!</button>
+    <script>
+
+        function changeTxt() {
+
+            document.getElementById('resultat').innerHTML += '<br>' +
+                document.getElementById('resultat').innerHTML;
+        }
+
+        function changeImg() {
+            document.getElementById("Grommash").style.maxWidth = "180px";
+        }
+
+        function defaultImg() {
+            document.getElementById("Grommash").style.maxWidth = "140px";
+        }
+        document.getElementById("enavant").addEventListener("click", changeTxt);
+        document.getElementById("Grommash").addEventListener("mouseenter", changeImg);
+        document.getElementById("Grommash").addEventListener("mouseleave", defaultImg);
+
+    </script>
+
 </body>
 
 </html>

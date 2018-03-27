@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
-    <title>Détails</title>
+    <title>Liste de courses</title>
 </head>
 
 <body>
     <header>
-        <h1>Détails</h1>
+        <h1>Liste de courses JS</h1>
     </header>
 
     <div id="menu">
@@ -42,17 +42,43 @@
             <br>
         </section>
     </div>
-
-    <div id="details">
-        <p>Site de test pour la formation POEI CapGemini de Développeur Java/J2EE concernant la partie site web et plus précisément
-            HTML (HyperText Markup Language) et feuilles de style CSS (Cascade Style Sheet).
-        </p>
-        <br>
-        <p>
-            <a href="index.html" alt="Retour">Retour Accueil</a>
-        </p>
-
+    <div id="resultat">
+        <input type="text" id="entree" placeholder="Entrez ici le nom du nouvel élément">
+        <button id="update">Ajouter</button>
+        <button id="suppr">Supprimer</button>
+        <ul id="liste">
+            <li>Orange</li>
+            <li>Pommme</li>
+            <li>Poire</li>
+            <li>Fraise</li>
+            <li>Raisin</li>
+            <li>Mangue</li>
+        </ul>
     </div>
+    <script>
+
+        function ajoutArt() {
+
+            var input = document.getElementById("entree").value;
+            document.getElementById("liste").innerHTML += "<li class=" + "ajout>" + input + "</li>";
+        }
+
+        function supprArt() {
+
+            var input = document.getElementById("entree");
+            var liste = document.getElementById("liste");
+            var tableau = document.getElementsByClassName("ajout");
+            for (i = 0; i < tableau.length; i++) {
+                liste.removeChild(tableau[i]);
+            }
+
+        }
+
+        document.getElementById("update").addEventListener("click", ajoutArt);
+        document.getElementById("suppr").addEventListener("click", supprArt);
+
+
+    </script>
 </body>
 
 </html>

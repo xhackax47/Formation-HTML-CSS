@@ -1,8 +1,12 @@
 body{
-    background-image: url('https://images3.alphacoders.com/159/159225.jpg');
+    background-image: url('https://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg');
 }
 
-div{
+b{
+    color: wheat;
+}
+
+#menu{
     background-color: brown;
     max-width: 300px;
     float: left;
@@ -11,17 +15,71 @@ div{
     margin: 5px;
 }
 
+#image{
+    background-color: brown; 
+    width: 800px;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 35%;
+}
+
+#details{
+    background-color: brown;
+    max-width: 500px;
+    float: left;
+    text-align: center;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin: 5px;
+}
+
+#resultat{
+    background-color: brown;
+    max-width: 500px;
+    float: left;
+    text-align: center;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.form{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: darkred;
+}
+
+.form2{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: darkred;
+}
+
+header{
+    border : solid 2px wheat;
+    color : wheat;
+    font-weight: bold;
+    font-size: 30 px;
+    text-align: center;
+    margin-top:  50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:  50px;
+    width: 50%;
+    min-height: 80px;
+}
+
+h3{
+    color:whitesmoke;
+}
+
 p{
     color: whitesmoke;
     border: dotted 3px darkslategrey;
-}
-
-h1{
-    font-weight: bold;
-    font-size: 30 px;
-    color: whitesmoke; 
-    text-align: center;
-    margin-top: 160px;
 }
 
 img{
@@ -36,4 +94,31 @@ a{
 a:visited{
     font-weight : bold;
     color: whitesmoke;
+}
+
+li{
+    color: wheat;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+
+label.lblpass {
+
+    color: #AA0000;
+    font-weight: bolder;
+
+}
+
+.fondjaune{
+    color : darkblue;
+    background-color: yellowgreen;
+}
+
+#lbl-nom{
+    font-size: 1.5em;
+    color: orange;
 }
