@@ -6,6 +6,18 @@ b{
     color: wheat;
 }
 
+h1{
+    color: wheat;
+}
+
+h2{
+    color: wheat;
+}
+
+h3{
+    color:whitesmoke;
+}
+
 #menu{
     background-color: brown;
     max-width: 300px;
@@ -73,10 +85,6 @@ header{
     min-height: 80px;
 }
 
-h3{
-    color:whitesmoke;
-}
-
 p{
     color: whitesmoke;
     border: dotted 3px darkslategrey;
@@ -115,7 +123,7 @@ label.lblpass {
 
 .fondjaune{
     color : darkblue;
-    background-color: yellowgreen;
+    background-color: yellow;
 }
 
 #lbl-nom{

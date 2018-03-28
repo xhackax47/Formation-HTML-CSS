@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <title>Liste de courses</title>
+    <script>
+
+    </script>
 </head>
 
 <body>
@@ -43,40 +46,39 @@
         </section>
     </div>
     <div id="resultat">
+        <h2>Liste de Courses</h2>
         <input type="text" id="entree" placeholder="Entrez ici le nom du nouvel élément">
         <button id="update">Ajouter</button>
-        <button id="suppr">Supprimer</button>
         <ul id="liste">
-            <li>Orange</li>
-            <li>Pommme</li>
-            <li>Poire</li>
-            <li>Fraise</li>
-            <li>Raisin</li>
-            <li>Mangue</li>
+
         </ul>
     </div>
     <script>
 
-        function ajoutArt() {
+        // Fonction d'ajout d'articles à la liste de courses
 
-            var input = document.getElementById("entree").value;
-            document.getElementById("liste").innerHTML += "<li class=" + "ajout>" + input + "</li>";
+        function addArt() {
+
+            var value = document.getElementById("entree").value;
+            var newLi = document.createElement("li");
+            newLi.innerText = value;
+            var newBtn = document.createElement("button");
+            newBtn.className="removebtn";
+            newBtn.innerText="Supprimer";
+
+            newBtn.addEventListener("click", function() {
+                document.getElementById("liste").removeChild(newLi);
+            });
+            
+            newLi.appendChild(newBtn);
+            document.getElementById("liste").appendChild(newLi);
         }
 
-        function supprArt() {
 
-            var input = document.getElementById("entree");
-            var liste = document.getElementById("liste");
-            var tableau = document.getElementsByClassName("ajout");
-            for (i = 0; i < tableau.length; i++) {
-                liste.removeChild(tableau[i]);
-            }
 
-        }
+        // Appel fonction sur un EventListener sur le click de souris sur les boutons   
 
-        document.getElementById("update").addEventListener("click", ajoutArt);
-        document.getElementById("suppr").addEventListener("click", supprArt);
-
+        document.getElementById("update").addEventListener("click", addArt);
 
     </script>
 </body>
