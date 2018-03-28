@@ -11,31 +11,44 @@ monTableau["ghellscream"] = new Personne("Grom", "Hellscream");
 monTableau["vwrynn"] = new Personne("Varian", "Wrynn");
 monTableau["schaabi"] = new Personne("Samy", "Chaabi");
 
-function addDiv() {
+function maFabriquedeRemove(unDiv) {{}
+    return function() {
+        document.body.removeChild(unDiv);
+    }
+}
 
-for(table in monTableau){
+function addDivTab() {
+
+for(cle in monTableau){
 
     var div = document.createElement("div");
-    div.id = "card" + table;
+    div.id = "card" + cle;
     div.className = "divFriends"; 
     
     var monBody = document.body;
 
-    monBody.appendChild(div);
 
     var para = document.createElement("p"); 
     para.className = "para";
-    para.innerText = monTableau[table].nom + " " + monTableau[table].prenom;
+    para.innerText = monTableau[cle].nom + " " + monTableau[cle].prenom;
 
-    div.appendChild(para);
 
     var alink = document.createElement("a");
-    alink.href = "resultat.php?login=" + table ;
+    alink.href = "resultat.php?login=" + cle ;
     alink.innerText = " PROFIL COMPLET"
 
-    div.appendChild(alink);
 
+    var monBtn = document.createElement("button");
+    monBtn.innerText ="Supprimer";
+
+    monBtn.addEventListener("click", maFabriquedeRemove(div));
+
+    monBody.appendChild(div);
+    div.appendChild(para);
+    div.appendChild(alink);
+    div.appendChild(monBtn);
+    document.body.appendChild(div);
     }   
 }
 
-addDiv();
+addDivTab();

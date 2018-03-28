@@ -61,6 +61,10 @@ h3{
     margin-left: 15%;
 }
 
+#boutonFriends{
+
+}
+
 .form{
     text-align: center;
     margin-left: 30%;
@@ -80,8 +84,8 @@ h3{
 .divFriends{
     text-align: center;
     border: solid 2px wheat;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .para{
@@ -110,7 +114,7 @@ header{
 
 ul{
     color: whitesmoke;
-    border: dotted 3px darkslategrey;
+    border: dotted 3px wheat;
 }
 
 img{
