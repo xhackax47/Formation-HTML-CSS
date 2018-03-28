@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/wow/images/5/53/World-of-warcraft_logo.png/revision/latest?cb=20140427161521&path-prefix=fr" type="image/x-icon" /> 
+    <link rel="shortcut icon" 
+    href="https://vignette.wikia.nocookie.net/wow/images/5/53/World-of-warcraft_logo.png/revision/latest?cb=20140427161521&path-prefix=fr" 
+    type="image/x-icon" /> 
     <script src="tableau.js">
         function message () {
             var toto = "Bonjour";
@@ -28,7 +30,6 @@
         <section>
             <b>Menu</b>
 
-            <p>
                 <ul>
                     <li>
                         <a href="index.html" alt="Accueil">Accueil</a>
@@ -45,41 +46,65 @@
                     <li>
                         <a href="newfile.html" alt="Liste Course">Liste Courses</a>
                     </li>
+                    <li>
+                            <a href="friends.html" alt="Friends">Friends</a>
+                    </li>
                 </ul>
 
-            </p>
             <p>Site de test pour la formation POEI CapGemini de Développeur Java/J2EE concernant la partie site web et plus
                 précisément HTML (HyperText Markup Language) et feuilles de style CSS (Cascade Style Sheet).
             </p>
-            <br>
         </section>
 
     </div>
 
     <div class="form" id="form">
         <form method="POST" action="resultat.php">
-
-            <label id="lbl-nom">Nom</label>
-            <br>
+            <label id="lbl-nom"><h2>Nom</h2></label>
             <input type="text" placeholder="Entrez votre nom" name="lastName">
             <br>
-            <label>Prénom</label>
-            <br>
+            <label><h2>Prénom</h2></label>
             <input type="text" placeholder="Entrez votre prénom" name="firstName">
             <br>
-            <label class="lblpass fondjaune">Email</label>
+            <label><h2>Pays</h2></label>
+            <br>
+            <select name="country">
+                <option value="Royaume-Uni">GB</option>
+                <option value="France">FR</option>
+                <option value="Russie">RU</option>
+                <option value="Japon">JP</option>
+            </select>
+            <br>
+            <label><h2>Titre</h2></label>
+            <br>
+            <input type="radio" name="prefix" value="Mr"><b>Monsieur</b>
+            <br>
+            <input type="radio" name="prefix" value="Mme"><b>Madame</b>
+            <br>
+            <input type="radio" name="prefix" value="Mlle" checked><b>Mademoiselle</b>
+            <br>
+            <label><h2>Centres d'intérêt</h2></label>
+            <br>
+            <input type="checkbox" name="cb" value="Informatique"><b>Informatique</b>
+            <br>
+            <input type="checkbox" name="cb" value="Jeux vidéos"><b>Jeux vidéos</b>
+            <br>
+            <input type="checkbox" name="cb" value="Programmation"><b>Programmation</b>
+            <br>
+            <label class="lblpass fondjaune"><h2>Email</h2></label>
             <br>
             <input type="email" placeholder="Entrez votre email" name="eMail">
             <br>
-            <label class="lblpass fondjaune">Mot de passe</label>
+            <label class="lblpass fondjaune"><h2>Mot de passe</h2></label>
             <br>
             <input type="password" placeholder="******" name="password">
+            <br>
             <br>
             <input type="submit" value="S'inscrire" name="inscription">
         </form>
     </div>
 
-    <div class="form2" id="form">
+<!--    <div class="form2" id="form">
             <form method="POST" action="resultat.php">
     
                 <label id="lbl-nom2">Nom 2</label>
@@ -101,6 +126,7 @@
                 <input type="submit" value="S'inscrire" name="inscription2">
             </form>
         </div>
+-->
 </body>
 
 </html>
