@@ -1,0 +1,123 @@
+body{
+    background-color: black;
+}
+
+a{
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: solid 1px azure;
+    padding: 5px;
+    border-radius: 15px; 
+}
+
+a:hover{
+    background-color: firebrick;
+    transition-duration: 1.5s;
+}
+
+.body-items{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.footer{
+    border-top: solid 3px whitesmoke;
+}
+
+.headerNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: azure;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+
+.header{
+    color: darkseagreen;
+    text-align: center;
+}
+
+#divImg{
+    border: 1px solid snow;
+    margin: 20px;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 4px 10px black;
+    border-radius: 4px;
+    padding: 1px 30px 10px 64px;
+    max-width: 200px;
+}
+
+#item-art1{
+    margin: 20px;
+    padding: 20px;
+    background-color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    max-height: 150px;
+    max-width: 1200px;
+}
+
+#item-art2{
+    margin: 20px;
+    padding: 20px;
+    background-color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    max-height: 150px;
+    max-width: 1200px;
+}
+
+#item-art3{
+    margin: 20px;
+    padding: 20px;
+    background-color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    max-height: 150px;
+    max-width: 1200px;
+}
+
+#logo{
+    max-width: 600px;
+    max-height: 200px;
+}
+
+#pfooter{
+    text-align: center;
+    font-weight: bold;
+    color: snow;
+}
+
+#result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+}
+
+#resultat{
+    background-color: silver;
+    max-width: 800px;
+    text-align: center;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
