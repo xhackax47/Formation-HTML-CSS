@@ -1,5 +1,7 @@
    function gnrateImage() {
 
+
+        // Trouvez une autre API générant des random images en REST
         var url = "http://api.icndb.com/jokes/random";
 
         var xmlhttp = new XMLHttpRequest();
