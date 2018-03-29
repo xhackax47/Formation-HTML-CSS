@@ -4,17 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" 
-    href="https://vignette.wikia.nocookie.net/wow/images/5/53/World-of-warcraft_logo.png/revision/latest?cb=20140427161521&path-prefix=fr" 
-    type="image/x-icon" /> 
-    <title>Premier JS</title>
+    <link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/wow/images/5/53/World-of-warcraft_logo.png/revision/latest?cb=20140427161521&path-prefix=fr"
+        type="image/x-icon" />
+    <title>Ajax</title>
 </head>
+<script>
+    function chuckThat() {
+
+        // Allez chercher blague sur API ICNDB et stockage dans variable blague
+
+        var blague = " ";
+        var url = "https://api.chucknorris.io/jokes/random";
+
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var data = JSON.parse(this.responseText);
+                blague = data.value;
+                document.getElementById("result").innerText = blague;
+                document.getElementById("avatar").src = data.icon_url;
+            };
+        }
+    }
+
+</script>
 
 <body>
     <header>
-        <h1>Premier script JavaScript</h1>
+        <h1>Ajax</h1>
     </header>
-
     <div id="menu">
         <section>
             <b>Menu</b>
@@ -40,7 +62,7 @@
                         <a href="friends.html" alt="Friends">Friends</a>
                     </li>
                     <li>
-                            <a href="ajax.html" alt="Ajax">Ajax</a>
+                        <a href="ajax.html" alt="Ajax">Ajax</a>
                     </li>
                 </ul>
 
@@ -52,32 +74,18 @@
         </section>
     </div>
 
-    <div id="resultat">Ici se trouvera le résultat</div>
+    <div id="resultat">
+        <h2>Liste de Blagues</h2>
+        <button id="btnblague" onclick="chuckThat()">GO</button>
+        <div id="result" class="para">
+            <ul id="blagues">
+
+            </ul>
+        </div>
+
     </div>
-    <img src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/3/3e/Grommash_wallpaper.jpg/665px-Grommash_wallpaper.jpg?version=6e9ef81f07e66407a014145bdf5af013"
-        id="Grommash" style="max-width:140px;">
-    <button id="enavant">En avant !!!</button>
-    <script>
 
-        function changeTxt() {
-
-            document.getElementById('resultat').innerHTML += '<br>' +
-                document.getElementById('resultat').innerHTML;
-        }
-
-        function changeImg() {
-            document.getElementById("Grommash").style.maxWidth = "180px";
-        }
-
-        function defaultImg() {
-            document.getElementById("Grommash").style.maxWidth = "140px";
-        }
-        document.getElementById("enavant").addEventListener("click", changeTxt);
-        document.getElementById("Grommash").addEventListener("mouseenter", changeImg);
-        document.getElementById("Grommash").addEventListener("mouseleave", defaultImg);
-
-    </script>
-
+    <img id="avatar">
 </body>
 
 </html>
