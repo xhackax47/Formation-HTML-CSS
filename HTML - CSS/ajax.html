@@ -8,30 +8,9 @@
         type="image/x-icon" />
     <title>Ajax</title>
 </head>
-<script>
-    function chuckThat() {
-
-        // Allez chercher blague sur API ICNDB et stockage dans variable blague
-
-        var blague = " ";
-        var url = "https://api.chucknorris.io/jokes/random";
-
-        var xmlhttp = new XMLHttpRequest();
-
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(this.responseText);
-                blague = data.value;
-                document.getElementById("result").innerText = blague;
-                document.getElementById("avatar").src = data.icon_url;
-            };
-        }
-    }
-
-</script>
+<script src="chuckThat.js"></script>
+<script src="jqchuckThat.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
     <header>
@@ -75,17 +54,15 @@
     </div>
 
     <div id="resultat">
-        <h2>Liste de Blagues</h2>
-        <button id="btnblague" onclick="chuckThat()">GO</button>
-        <div id="result" class="para">
-            <ul id="blagues">
+        <h2>Liste Chuck Norris Facts</h2>
+        <button id="go" onclick="jqchuckThat()">Générer une fact</button>
+        <br>
+        <div id="result">
 
-            </ul>
         </div>
 
     </div>
 
-    <img id="avatar">
 </body>
 
 </html>

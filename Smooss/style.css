@@ -27,6 +27,15 @@ a:hover{
     color: whitesmoke;
 }
 
+.btns{
+    margin : 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .footer{
     border-top: solid 3px whitesmoke;
 }

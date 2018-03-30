@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" 
+    href="https://vignette.wikia.nocookie.net/wow/images/5/53/World-of-warcraft_logo.png/revision/latest?cb=20140427161521&path-prefix=fr" 
+    type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <title>Jquery</title>
+    <style>
+    .active{
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+        <div id="menu">
+                <section>
+                    <b>Menu</b>
+        
+                        <ul>
+                            <li>
+                                <a href="index.html" alt="Accueil">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="details.html" alt="Détails">Détails</a>
+                            </li>
+                            <li>
+                                <a href="formulaire.html" alt="Formulaire">Formulaire</a>
+                            </li>
+                            <li>
+                                <a href="premierjs.html" alt="Formulaire">Script JS</a>
+                            </li>
+                            <li>
+                                <a href="newfile.html" alt="Liste Course">Liste Courses</a>
+                            </li>
+                            <li>
+                                <a href="friends.html" alt="Friends">Friends</a>
+                            </li>
+                            <li>
+                                    <a href="ajax.html" alt="Ajax">Ajax</a>
+                            </li>
+                        </ul>
+                    <br>
+                </section>
+        
+            </div>
+
+    
+
+    <button onclick="enleveActive()"> Active</button>
+
+    <!-- Créations des divs -->        
+    
+    <div id="hello">Le span vaut : <span class="toto">rien</span></div>
+    <div id="bonjour">L'autre span vaut : <span class="toto">rien</span></div>
+    <div class="card">Carte 1</div>
+    <div class="card">Carte 2</div>
+    <div class="card active no-left-align in-table-display card-subitem">Carte 3</div>
+    <div class="card">Carte 4</div>
+    <div class="card">Carte 5</div>
+    <div class="card">Carte 6</div>
+    <div class="card">Carte 7</div>
+    <div class="card">Carte 8</div>
+    <div class="card">Carte 9</div>
+
+    <!-- Script Jquery -->        
+    <script id="script">
+        // Trouve classe toto dans id hello et donne valeur texte "une valeur de notre choix"
+
+      //  $("#hello").find(".toto").text("une valeur de notre choix");
+
+        // Trouve classe card et donne valeur texte "Merci"
+        $(".card").text("Merci");
+        
+
+        function enleveActive(){
+
+        // Affecter la classe active a variable toto    
+        var toto = $(".active");
+        // Supprimer classe active de toto
+        toto.removeClass("active");
+        // Ajouter classe active sur id bonjour
+        $("#bonjour").addClass("active");
+}
+
+// Si clique sur une carte alors ecris dans id hello le texte.
+$(".card").click(function(){ $("#hello").text("Une carte a été séléctionnée")  });
+// Definir un addeventlistener avec on sur la classe carte en utilisant fonction qui ajoute du texte a bonjour
+$(".card").on("click", function(){ $("#bonjour").text("une carte a vraiment été cliquée !!")})
+    </script>
+    
+    
+</body>
+</html>

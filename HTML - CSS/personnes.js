@@ -47,7 +47,6 @@ for(cle in monTableau){
     div.appendChild(para);
     div.appendChild(alink);
     div.appendChild(monBtn);
-    document.body.appendChild(div);
     }   
 }
 

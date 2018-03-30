@@ -23,75 +23,33 @@ h3{
     color:whitesmoke;
 }
 
-#menu{
-    background-color: brown;
-    max-width: 300px;
-    float: left;
-    border: solid 1px salmon;
-    padding: 10px;
-    margin: 5px;
+/* Définir feuille de style pour un type particulier de média (pour le premier : si screen max-width:4000 alrs font-size de h3 = 12px)
+*/
+@media screen and (max-width:400px) {
+    h3{
+
+    font-size: 12px;
+
+    }
+
 }
 
-#image{
-    background-color: brown; 
-    width: 300px;
-    border: solid 1px salmon;
-    padding: 10px;
-    margin-left: 40%;
-    margin-right: 35%;
+@media screen and (min-width:401px) and (max-width:600px) {
+    h3{
+
+    font-size: 22px;
+
+    }
+
 }
 
-#details{
-    background-color: brown;
-    max-width: 500px;
-    float: left;
-    text-align: center;
-    border: solid 1px salmon;
-    padding: 10px;
-    margin: 5px;
-}
+@media screen and (min-width:601px) {
+    h3{
 
-#resultat{
-    background-color: brown;
-    max-width: 500px;
-    float: left;
-    text-align: center;
-    border: solid 1px salmon;
-    padding: 10px;
-    margin-left: 15%;
-}
+    font-size: 32px;
 
-.form{
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: darkred;
-    border: solid 1px wheat;
-}
+    }
 
-.form2{
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: darkred;
-}
-
-.divFriends{
-    text-align: center;
-    border: solid 2px wheat;
-    margin-left: 35%;
-    margin-right: 35%;
-}
-
-.para{
-    color: tomato;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    border: solid 1px wheat;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 header{
@@ -149,13 +107,151 @@ label.lblpass {
     font-weight: bolder;
 
 }
+.form{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: darkred;
+    border: solid 1px wheat;
+}
+
+.form2{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: darkred;
+}
+
+.divFriends{
+    text-align: center;
+    border: solid 2px wheat;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.para{
+    color: tomato;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 1px wheat;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 .fondjaune{
     color : darkblue;
     background-color: yellow;
 }
 
+#menu{
+    background-color: brown;
+    max-width: 300px;
+    float: left;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin: 5px;
+}
+
+#image{
+    background-color: brown; 
+    width: 300px;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 35%;
+}
+
+#details{
+    background-color: brown;
+    max-width: 500px;
+    float: left;
+    text-align: center;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin: 5px;
+}
+
+#resultat{
+    background-color: brown;
+    max-width: 800px;
+    float: left;
+    text-align: center;
+    border: solid 1px salmon;
+    padding: 10px;
+    margin-left: 15%;
+}
+
 #lbl-nom{
     font-size: 1.5em;
     color: orange;
+}
+
+#divFact{
+    border: 1px solid snow;
+    margin: 20px;
+    background-color: darkseagreen;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 4px 10px black;
+    border-radius: 4px;
+    padding: 1px 30px 10px 64px;
+    max-width: 200px;
+}
+
+#divFact a{
+    color: blueviolet;
+    text-decoration: none;
+    border: solid 2px blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    padding: 2px 4px;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+
+#divFact a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#divFact p{
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+#result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+    border: solid 2px wheat;
+    max-width: 800px;
+}
+
+#hello{
+    color: whitesmoke;
+}
+
+#bonjour{
+    color: whitesmoke;
+}
+
+.card{
+    color: whitesmoke;
+}
+
+.btnune{
+    display: block;
+}
+
+.alaUne{
+    order: -1;
+}
+
+.imageChuck{
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px 5px 5px 5px;
 }
