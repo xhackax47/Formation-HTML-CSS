@@ -1,0 +1,171 @@
+.copyright{
+    color: whitesmoke !important;
+}
+
+
+.dropdown-item:hover{
+    color: black !important;
+}
+
+.dropdown-menu {
+    background-color: black !important;
+    color: whitesmoke !important;
+}
+
+.footer{
+    background-color: firebrick !important;
+    text-align: center !important;
+}
+
+.liens{
+    color: wheat !important;
+
+}
+
+.navbar {
+    background-color: firebrick !important;
+}
+
+body{
+    background-color: black !important;
+    color:  silver!important;
+    font-weight: bold;
+}
+
+a{
+    color: whitesmoke !important;
+}
+
+h3{
+    text-align: center;
+    margin: 40%;
+    padding: 10px;
+}
+
+h4{
+    padding: 10%;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px wheat;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: firebrick;
+    padding: 10px;
+}
+
+.modif{
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px wheat;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: firebrick;
+    padding: 10px;
+}
+
+#messagerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#gestionE{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#ajoutE{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#modules{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#modulesAdd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#news{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: firebrick;
+    padding: 20px;
+}
+
+#newsSite{
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: brown;
+    padding: 20px;
+}
+
+#newsMtp{
+    text-align: center;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    background-color: brown;
+    padding: 20px;
+}
+
+
+.msg{
+    width: 300px;
+    height: 100px;
+}
