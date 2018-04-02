@@ -38,13 +38,14 @@ a{
 
 h3{
     text-align: center;
-    margin: 40%;
     padding: 10px;
 }
 
 h4{
-    padding: 10%;
+    padding: 1%;
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contact{
@@ -127,24 +128,11 @@ h4{
     justify-content: space-around;
     text-align: center;
     color: whitesmoke;
-    border: solid 1px whitesmoke;
     border-radius: 10px;
     background-color: firebrick;
     padding: 20px;
 }
 
-#news{
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column-reverse;
-    justify-content: space-between;
-    text-align: center;
-    color: whitesmoke;
-    border: solid 1px whitesmoke;
-    border-radius: 10px;
-    background-color: firebrick;
-    padding: 20px;
-}
 
 #newsSite{
     text-align: center;
