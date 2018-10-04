@@ -17,6 +17,7 @@ var chaine1;
 var chaine2;
 var chaine3;
 var extension;
+var extJPG;
 
 // Attribution valeur (string,int,boolean,etc..) aux variables
 
@@ -36,6 +37,7 @@ chaine1 = "Coucou";
 chaine2 = "Salut les copains et copines";
 chaine3 = "Bonjour" ;
 extension = "PDF";
+extJPG = "JPG";
 
 // Affiche dans la console
 
@@ -167,9 +169,8 @@ switch(extension)
 
 // Tests Format
 
-var ext = "JPG";
 var chaineUser = "Mon fichier est au format :";
-var chaineFormat = (extension == "JPG") ? "jpeg" : "pas de jpeg" + "\n";
+var chaineFormat = (extension == extJPG) ? "jpeg" : "pas de jpeg" + "\n";
 
 console.log(chaineUser + chaineFormat);
 
